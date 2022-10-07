@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import { pixelToRem } from "../styles/global.styled";
+import {
+  pixelToRem,
+  widthAndPaddingContainerDefault,
+} from "../styles/global.styled";
 
 export const HeaderContainer = styled.header`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: ${pixelToRem(40)} ${pixelToRem(20)};
-  max-width: ${pixelToRem(1200)};
+  ${widthAndPaddingContainerDefault}
   h1 {
     font-size: 2rem;
     font-weight: 700;

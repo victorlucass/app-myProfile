@@ -52,8 +52,13 @@ img {
 }
 `;
 
-// functions
+// functions / consts
 
 export function pixelToRem(valor: number): string {
   return valor / 16 + "rem";
 }
+
+export const widthAndPaddingContainerDefault = `padding: ${pixelToRem(
+  40
+)} ${pixelToRem(20)};
+max-width: ${pixelToRem(1200)}; margin: 0 auto;`;
