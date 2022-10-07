@@ -1,0 +1,16 @@
+export const defaultTheme = {
+  c1: "#F5F5F5",
+  c2: "#F0F0F0",
+  c3: "#E0E0E0",
+  c4: "#CCCCCC",
+  c5: "#B8B8B8",
+  c6: "#A3A3A3",
+  c7: "#8F8F8F",
+  c8: "#7A7A7A",
+  c9: "#666666",
+  c10: "#525252",
+  c11: "#3D3D3D",
+  c12: "#292929",
+  c13: "#141414",
+  gradient: "linear-gradient(180deg, #4EA8DE 0%, #1E6F9F 100%);",
+};
