@@ -30,6 +30,23 @@ export const IntroductionContainer = styled.section`
     left: -40px;
     z-index: -1;
   }
+  div h1::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
   div p {
     font-size: 1.5rem;
     color: ${(props) => props.theme.c10};
