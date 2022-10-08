@@ -66,6 +66,23 @@ strong {
     color: ${(props) => props.theme.c10};
 	font-style: normal;
 }
+/* custom scroll */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: ${(props) => props.theme.c3};
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: ${(props) => props.theme.gradient};
+  border-radius: 8px;
+}
 `;
 
 // functions / consts
