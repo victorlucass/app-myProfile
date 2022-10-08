@@ -7,9 +7,10 @@ export function Experience() {
       <h2>Experiência</h2>
       <div>
         <p className="paragraphStyleDefault">
-          Olá! Me chamo Victor Lucas e atualmente focado em desenvolvimento
-          Front-End, porém sempre disposto em aprender tecnologias novas. Meu
-          objetivo é evoluir 1% por dia e me torna um bom profissional 😎
+          Olá! Me chamo Victor Lucas e atualmente estou focado em
+          desenvolvimento Front-End, porém sempre disposto a aprender
+          tecnologias novas. Meu objetivo é evoluir 1% por dia e me tornar um
+          bom profissional 😎
         </p>
 
         {ExperienceData.map((company: ExperienceCardsProps) => {
