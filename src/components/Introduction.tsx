@@ -1,5 +1,5 @@
 import { IntroductionContainer } from "./Introduction.styled";
-import mySelfEmoji from "../assets/myself-emoji.svg";
+import mySelfEmoji from "../assets/myself.png";
 import { useEffect } from "react";
 
 export function Introduction() {
