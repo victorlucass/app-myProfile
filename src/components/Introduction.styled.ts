@@ -64,11 +64,12 @@ export const IntroductionContainer = styled.section`
       left: 0px;
     }
   }
-
-  @media screen and (max-width: 400px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 535px) {
     img {
       display: none;
     }
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
   }
 `;

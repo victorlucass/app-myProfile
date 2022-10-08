@@ -35,4 +35,18 @@ export const HeaderContainer = styled.header`
       border-radius: 4px;
     }
   }
+
+  @media screen and (max-width: 648px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 420px) {
+    h1 {
+      text-align: left;
+    }
+    nav {
+      display: none;
+    }
+  }
 `;
