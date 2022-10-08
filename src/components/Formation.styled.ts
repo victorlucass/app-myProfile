@@ -133,16 +133,16 @@ export const FormationContainer = styled.section`
       gap: 40px;
     }
 
-    .formation-container {
-      h2 {
-        font-size: 3rem;
-        text-transform: capitalize;
-        max-width: initial;
-      }
-      .paragraphStyleDefault {
-        font-size: 1.25rem;
-      }
+    .formation-container h2 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      max-width: initial;
+      color: ${(props) => props.theme.c2};
     }
+    .formation-container .paragraphStyleDefault {
+      font-size: 1.25rem;
+    }
+
     .extra-training h3::before {
       position: initial;
       margin-bottom: 10px;
