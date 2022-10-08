@@ -1,3 +1,4 @@
+import { CoursesData } from "../mocks/CoursesData";
 import { FormationContainer } from "./Formation.styled";
 
 export function Formation() {
@@ -7,30 +8,25 @@ export function Formation() {
         <h2>Formação</h2>
         <div>
           <p className="paragraphStyleDefault">
-            Minha mais recente experiência acadêmica foi o mestrado 🎓 que fiz
-            no exterior em UX Design. Além disso me mantenho sempre atualizado
-            com cursos intensivos online.
+            Minha mais recente experiência acadêmica foi a{" "}
+            <strong>graduação</strong> 🎓 em
+            <strong> sistemas de informação</strong>. Além disso me mantenho
+            sempre atualizado com cursos intensivos online.
           </p>
           <ul className="college-list">
             <li className="college-info-container">
               <span className="college-type">Bacharel</span>
-              <h3 className="college-course">Administração de empresas</h3>
-              <span className="college-institution">UFAM </span>
+              <h3 className="college-course">
+                Sistemas de <br /> Informação
+              </h3>
+              <span className="college-institution">UNINORTE </span>
             </li>
             <li className="college-info-container">
-              <span className="college-type">Bacharel</span>
-              <h3 className="college-course">Administração de empresas</h3>
-              <span className="college-institution">UFAM </span>
-            </li>
-            <li className="college-info-container">
-              <span className="college-type">Bacharel</span>
-              <h3 className="college-course">Administração de empresas</h3>
-              <span className="college-institution">UFAM </span>
-            </li>
-            <li className="college-info-container">
-              <span className="college-type">Bacharel</span>
-              <h3 className="college-course">Administração de empresas</h3>
-              <span className="college-institution">UFAM </span>
+              <span className="college-type">TECNÓLOGO</span>
+              <h3 className="college-course">
+                Programador <br /> Web - Básico
+              </h3>
+              <span className="college-institution">FPF Tech</span>
             </li>
           </ul>
 
@@ -38,22 +34,13 @@ export function Formation() {
             <div className="courses">
               <h3>CURSOS INTENSIVOS</h3>
               <ul>
-                <li>
-                  UX Design & UI Design
-                  <span>56h</span>
-                </li>
-                <li>
-                  UX Design & UI Design
-                  <span>56h</span>
-                </li>
-                <li>
-                  UX Design & UI Design
-                  <span>56h</span>
-                </li>
-                <li>
-                  UX Design & UI Design
-                  <span>56h</span>
-                </li>
+                {CoursesData.map((course) => {
+                  return (
+                    <li key={course.name}>
+                      {course.name} <span>{course.hours}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -61,10 +48,10 @@ export function Formation() {
               <h3>IDIOMAS</h3>
               <ul>
                 <li>
-                  Inglês <span>/ Fluente</span>
+                  Inglês <span>/ Básico</span>
                 </li>
                 <li>
-                  Inglês <span>/ Fluente</span>
+                  Português <span>/ Nativo</span>
                 </li>
               </ul>
             </div>

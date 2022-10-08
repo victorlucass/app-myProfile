@@ -23,7 +23,7 @@ export function Introduction() {
         characterIndex = 0;
       }
     };
-    // setInterval(type, 300);
+    setInterval(type, 300);
   }, []);
   return (
     <IntroductionContainer>

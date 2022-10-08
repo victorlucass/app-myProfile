@@ -21,13 +21,43 @@ export const FooterContainer = styled.footer`
     color: ${(props) => props.theme.white};
     margin-bottom: 30px;
   }
-  .footer-contact li a {
+  .footer-contact li a,
+  .footer-midias li a {
     color: ${(props) => props.theme.white};
+    transition: 0.5s;
+  }
+
+  .footer-midias li a:hover {
+    color: #4ea8de;
   }
 
   .footer-copy {
     font-size: 1.15rem;
     color: ${(props) => props.theme.c7};
+  }
+
+  .footer-midias {
+    display: flex;
+    gap: 5px;
+    position: relative;
+  }
+
+  .rocket-top {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    animation: seta 0.5s ease-in 0s infinite alternate;
+    cursor: pointer;
+  }
+
+  @keyframes seta {
+    from {
+      top: -10px;
+    }
+
+    to {
+      bottom: 10px;
+    }
   }
 
   @media screen and (max-width: 800px) {

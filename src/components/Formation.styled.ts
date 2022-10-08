@@ -47,8 +47,7 @@ export const FormationContainer = styled.section`
     background: ${(props) => props.theme.black2};
     border: 1px solid ${(props) => props.theme.black};
     border-radius: 5px;
-    padding: 20px;
-    flex: 1;
+    padding: 20px 80px 20px 20px;
   }
   .college-type,
   .college-institution {
@@ -148,5 +147,9 @@ export const FormationContainer = styled.section`
       position: initial;
       margin-bottom: 10px;
     }
+  }
+
+  .paragraphStyleDefault strong {
+    color: ${(props) => props.theme.white};
   }
 `;

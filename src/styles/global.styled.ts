@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+	text-decoration: none;
+}
 img {
 	max-width: 100%;
 	height: auto;
