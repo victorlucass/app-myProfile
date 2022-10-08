@@ -60,4 +60,30 @@ export const ExperienceContainer = styled.section`
     line-height: 1.1;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    h2 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      max-width: initial;
+    }
+    .company-experience {
+      font-size: 1.25rem;
+    }
+    .company-year {
+      position: initial;
+      order: 1;
+      width: initial;
+      text-align: left;
+    }
+    .company-year::before {
+      content: "Ano: ";
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 `;

@@ -25,6 +25,48 @@ export function Experience() {
             <li>Javascript</li>
           </ul>
         </div>
+        <div className="company-container">
+          <span className="company-year">2045</span>
+          <h3 className="bold-titulo">Bikcraft</h3>
+          <span className="bold-titulo">Desenvolvedor Júnior</span>
+          <p className="company-experience">
+            Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML,
+            CSS e JavaScript. Para aplicativos web como a rede social Dogs.
+          </p>
+          <ul className="company-skill">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div className="company-container">
+          <span className="company-year">2045</span>
+          <h3 className="bold-titulo">Bikcraft</h3>
+          <span className="bold-titulo">Desenvolvedor Júnior</span>
+          <p className="company-experience">
+            Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML,
+            CSS e JavaScript. Para aplicativos web como a rede social Dogs.
+          </p>
+          <ul className="company-skill">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div className="company-container">
+          <span className="company-year">2045</span>
+          <h3 className="bold-titulo">Bikcraft</h3>
+          <span className="bold-titulo">Desenvolvedor Júnior</span>
+          <p className="company-experience">
+            Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML,
+            CSS e JavaScript. Para aplicativos web como a rede social Dogs.
+          </p>
+          <ul className="company-skill">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
       </div>
     </ExperienceContainer>
   );
