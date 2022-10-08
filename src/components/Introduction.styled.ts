@@ -1,16 +1,10 @@
 import styled from "styled-components";
-import {
-  pixelToRem,
-  widthAndPaddingContainerDefault,
-} from "../styles/global.styled";
+import { pixelToRem, containerDefault } from "../styles/global.styled";
 
 import detalhe from "../assets/detalhe.svg";
 
 export const IntroductionContainer = styled.section`
-  ${widthAndPaddingContainerDefault}
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: ${pixelToRem(100)};
+  ${containerDefault}
   align-items: center;
   div h1 {
     font-size: 4.5rem;
@@ -46,12 +40,6 @@ export const IntroductionContainer = styled.section`
       opacity: 0;
     }
   }
-
-  div p {
-    font-size: 1.5rem;
-    color: ${(props) => props.theme.c10};
-  }
-
   @media screen and (max-width: 1000px) {
     div h1 {
       font-size: 3rem;
@@ -67,7 +55,7 @@ export const IntroductionContainer = styled.section`
     div h1 {
       font-size: 2rem;
     }
-    div p {
+    .paragraphStyleDefault {
       font-size: 1.15rem;
     }
     div h1::before {

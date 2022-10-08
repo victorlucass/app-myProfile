@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components";
+import { Experience } from "./components/Experience";
 import { Header } from "./components/Header";
 import { Introduction } from "./components/Introduction";
 import { GlobalStyled } from "./styles/global.styled";
@@ -9,6 +10,7 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <Header />
       <Introduction />
+      <Experience />
       <GlobalStyled />
     </ThemeProvider>
   );

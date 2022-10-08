@@ -1,6 +1,6 @@
 import { IntroductionContainer } from "./Introduction.styled";
 import mySelfEmoji from "../assets/myself-emoji.svg";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 export function Introduction() {
   useEffect(() => {
@@ -23,8 +23,7 @@ export function Introduction() {
         characterIndex = 0;
       }
     };
-
-    setInterval(type, 300);
+    // setInterval(type, 300);
   }, []);
   return (
     <IntroductionContainer>
@@ -33,7 +32,7 @@ export function Introduction() {
         <h1>
           Desenvolvedor <br /> Front End <br /> <span data-js="typing"></span>
         </h1>
-        <p>Localizado em Manaus 🐆</p>
+        <p className="paragraphStyleDefault">Localizado em Manaus 🐆</p>
       </div>
     </IntroductionContainer>
   );
