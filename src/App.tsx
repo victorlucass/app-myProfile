@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import { Experience } from "./components/Experience";
+import { Footer } from "./components/Footer";
 import { Formation } from "./components/Formation";
 import { Header } from "./components/Header";
 import { Introduction } from "./components/Introduction";
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <Experience />
       <Formation />
+      <Footer />
       <GlobalStyled />
     </ThemeProvider>
   );

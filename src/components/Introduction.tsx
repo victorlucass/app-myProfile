@@ -27,7 +27,7 @@ export function Introduction() {
   }, []);
   return (
     <IntroductionContainer>
-      <img src={mySelfEmoji} alt="mySelf Emoji" />
+      <img src={mySelfEmoji} alt="mySelf Emoji" width="360" height="520" />
       <div>
         <h1>
           Desenvolvedor <br /> Front End <br /> <span data-js="typing"></span>
